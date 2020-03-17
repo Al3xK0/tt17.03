@@ -1,0 +1,47 @@
+//MAPS
+
+{
+    "message": "success", 
+    "timestamp": UNIX_TIME_STAMP, 
+    "iss_position": {
+      "latitude": CURRENT_LATITUDE, 
+      "longitude": CURRENT_LONGITUDE
+    }
+  }
+  
+  CALLBACK({
+    "message": "success", 
+    "timestamp": UNIX_TIME_STAMP,
+    "iss_position": {
+      "latitude": CURRENT_LATITUDE, 
+      "longitude": CURRENT_LONGITUDE
+    }
+  })
+
+//EKIPAZH
+  
+  {
+    "message": "success",
+    "number": NUMBER_OF_PEOPLE_IN_SPACE,
+    "people": [
+      {"name": NAME, "craft": SPACECRAFT_NAME},
+      ...
+    ]
+  }
+
+  CALLBACK({
+    "message": "success",
+    "number": %NUMBER_OF_PEOPLE_IN_SPACE%,
+    "people": [
+      {"name": %NAME%, "craft": %SPACECRAFT_NAME%},
+      ...
+    ]
+  })
+
+  {
+    "error_message" : "You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account",
+    "results" : [],
+    "status" : "REQUEST_DENIED"
+ }
+
+  

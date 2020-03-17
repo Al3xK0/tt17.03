@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+div{
+  display: flex;
+}
+
+html {
+  display: flex;
+  min-height: 100%;
+}
+
+body{
+  flex: 1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  padding: 0 15px;
+}
+
+header{
+  position: relative;
+  padding: 18px 0;
+  background-color: #f8f8f8;
+}
+
+header .container{
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+header .container .nav_bar{
+  border: 2px solid black;
+  padding: 5px;
+  display: block;
+  width: 63%;
+}
+
+header .container .nav_bar #iss_position{
+  justify-content: space-between;
+}
+
+header .container #time{
+  display: block;
+  padding: 38px;
+  border: 2px solid black;
+  width: 32%;
+  height: 131.81px;
+}
+
+.main{
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.main #maps{
+  width: 63%;
+  height: 700px;
+}
+
+.main #maps iframe{
+  width: 100%;
+}
+
+.main .crewteam{
+  border: 2px solid black;
+  width: 32%;
+  display: block;
+  position: relative;
+}
+
+.main .crewteam .team .member{
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.main .crewteam .team .member img{
+  width: 12%;
+  border-radius: 50%;
+}
+
+.main .crewteam .team .member p{
+  margin-left: 20px;
+}
+
+.main .amount{
+  bottom: 0;
+  position: absolute;
+  border-top: 2px solid black;
+  width: 100%;
+}
